@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            <img src="https://cdn-icons-png.flaticon.com/128/3566/3566139.png" alt="Logo Image">
+            <p>TastyPause</p>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <p id="description">"Discover a treasure trove of mouthwatering recipes, expert tips, and foodie delights. Elevate your kitchen experience with our diverse and delightful offerings. Taste the extraordinary at Tasty Pause!"</p>
+    <div class="container">
+        <div class="search" id="search-bar">
+            <input type="search" placeholder="Type here for meal-category" name="q" class="search__input" id="search-input">
+            <div class="search__button" id="search-button">
+                <img class="ic" src="https://cdn-icons-png.flaticon.com/128/12596/12596635.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="randommeal">
+        <img id="randomMealImage" class="ranimage turning-image fade-in" alt="">
+        <div class="content">
+            <p class="msg">“A tasty Surprise in every bite”</p>
+            <button id="popupButton"></button>
+        </div>
+    </div>
+
+    <div id="result"></div>
+
+    <div class="meal-category"></div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h1 id="heading">Ingredients</h1>
+            <span class="close" id="closePopup">&times;</span>
+            <div id="mealInfo">
+                <img id="popupMealImage" alt="Popup Meal Image">
+                <p id="ingredients"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
